@@ -11,7 +11,7 @@ Vagrant.configure(2) do |config|
       gem2.0 install --no-ri --no-rdoc bundler
     SHELL
 
-  # add the local user git config to the vm
+  # add the local user git config to the vm (Virtual Machine)
   config.vm.provision "file", source: "~/.gitconfig", destination: ".gitconfig"
 
   config.vm.provision "install",
